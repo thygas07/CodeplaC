@@ -97,10 +97,10 @@
 								<td>Exemplo</td>
 								<td><span class="status member">Membro</span></td>
 								<td>
-									<selected class="role-select" onchange="updateStatus(this)">
+									<select class="role-select" onchange="updateStatus(this)">
 										<option value="Member" selected>Membro</option>
 										<option value="Admin">Admin</option>
-									</selected>
+									</select>
 								</td>
 								<td>
 									<button class="config-btn" onclick="saveUser(this)">
@@ -158,6 +158,7 @@
 							<label for="noturno">Noturno</label>
 						</div>
 					</div>
+					<input type="time" id="event-time" placeholder="Horário do Evento" />
 					<button onclick="createNewEvent()">Adicionar Evento</button>
 				</div>
 				<div id="event-list">
